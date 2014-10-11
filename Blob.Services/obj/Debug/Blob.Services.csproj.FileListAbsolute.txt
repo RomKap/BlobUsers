@@ -1,0 +1,7 @@
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\obj\Debug\Blob.Services.csprojResolveAssemblyReference.cache
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\bin\Debug\Blob.Services.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\bin\Debug\Blob.Services.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\bin\Debug\Blob.Core.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\bin\Debug\Blob.Core.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\obj\Debug\Blob.Services.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Services\obj\Debug\Blob.Services.pdb
