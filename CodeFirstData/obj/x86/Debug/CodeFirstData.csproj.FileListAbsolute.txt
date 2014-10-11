@@ -1,0 +1,12 @@
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\CodeFirstData.exe.config
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\CodeFirstData.exe
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\CodeFirstData.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\Blob.Core.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\EntityFramework.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\Blob.Core.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\EntityFramework.xml
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\obj\x86\Debug\CodeFirstData.csprojResolveAssemblyReference.cache
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\obj\x86\Debug\CodeFirstData.exe
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\CodeFirstData\obj\x86\Debug\CodeFirstData.pdb

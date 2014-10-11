@@ -1,0 +1,11 @@
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\Blob.Data.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\Blob.Data.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\obj\Debug\Blob.Data.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\obj\Debug\Blob.Data.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\Blob.Core.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\EntityFramework.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\Blob.Core.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\EntityFramework.xml
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Data\obj\Debug\Blob.Data.csprojResolveAssemblyReference.cache
