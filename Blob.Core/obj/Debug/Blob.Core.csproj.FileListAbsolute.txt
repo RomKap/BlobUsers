@@ -1,4 +1,8 @@
 C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\Blob.Core.dll
 C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\Blob.Core.pdb
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\Autofac.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\AutoMapper.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\AutoMapper.Net4.dll
+C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\bin\Debug\AutoMapper.xml
 C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\obj\Debug\Blob.Core.dll
 C:\Romesh_Backup D\RomeshTrialProjects\BlobUsers\Blob.Core\obj\Debug\Blob.Core.pdb

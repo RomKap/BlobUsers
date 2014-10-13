@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Blob.Web.Framework.Mvc;
 
 namespace Blob.Web
 {
@@ -32,6 +33,8 @@ namespace Blob.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            ModelBinders.Binders.Add(typeof(BaseBlobModel), new BlobModelBinder());
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

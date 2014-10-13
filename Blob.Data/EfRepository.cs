@@ -19,7 +19,7 @@ namespace Blob.Data
             get
             {
                 if (_entities == null)
-                    _entities = _context.set<T>();
+                    _entities = _context.Set<T>();
 
                 return _entities;
             }
@@ -63,22 +63,68 @@ namespace Blob.Data
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (entity == null)
+                    throw new ArgumentNullException("entity");
+
+                this._context.SaveChanges();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                var msg = string.Empty;
+
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                        msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+
+                var fail = new Exception(msg, dbEx);
+                //Debug.WriteLine(fail.Message, fail);
+                throw fail;
+            }
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (entity == null)
+                    throw new ArgumentNullException("entity");
+
+                this.Entities.Remove(entity);
+
+                this._context.SaveChanges();
+            }
+            catch (DbEntityValidationException dbEx)
+            {
+                var msg = string.Empty;
+
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                        msg += Environment.NewLine + string.Format("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+
+                var fail = new Exception(msg, dbEx);
+                //Debug.WriteLine(fail.Message, fail);
+                throw fail;
+            }
         }
 
         public IQueryable<T> Table
         {
-            get { throw new NotImplementedException(); }
+            get 
+            {
+              return this.Entities;
+            }
         }
 
         public IQueryable<T> TableNoTracking
         {
-            get { throw new NotImplementedException(); }
+            get
+            {
+                if (_entities == null)
+                    _entities = _context.Set<T>();
+                return _entities;
+            }
         }
 
         #endregion

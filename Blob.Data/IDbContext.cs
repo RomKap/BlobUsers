@@ -9,7 +9,7 @@ namespace Blob.Data
 {
    public interface IDbContext
     {
-       IDbSet<TEntity> set<TEntity>() where TEntity : BaseEntity;
+       IDbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity;
 
        int SaveChanges();
 

@@ -8,6 +8,9 @@ using System.Web.Mvc;
 using Blob.Services.Users;
 using Blob.Web.Framework.Controllers;
 using Blob.Web.Models.Users;
+using Blob.Web.Framework.Kendoui;
+using Blob.Core.Domain.Users;
+
 
 namespace Blob.Web.Controllers
 {
@@ -44,14 +47,34 @@ namespace Blob.Web.Controllers
             return View(listModel);
         }
 
-        //public ActionResult UserList(DataSourceRequest command, UserListModel model)
-        //{
-        //    var users = _userService.GetAllUsers();
+        public ActionResult UserList(DataSourceRequest command, UserListModel model)
+        {
+            var users = _userService.GetAllUsers();
 
-        //    var gridModel = new DataSourceResult
-        //    {
-        //    };
-        //}
+            //var gridModel = new DataSourceResult
+            //{
+            //    Data = users.Select(PrepareUserModelForList),
+            //    Total = users.TotalCount
+            //};
+
+            //return Json(gridModel);
+
+            return View("List");
+        }
+
+        protected virtual UserModel PrepareUserModelForList(User user)
+        {
+            return new UserModel()
+            {
+                Id = user.Id,
+                fname = user.fname,
+                lname = user.lname,
+                Username = user.Username,
+                Password = user.Password,
+                Email = user.Email,
+                Active = user.Active
+            };
+        }
 
     }
 }
