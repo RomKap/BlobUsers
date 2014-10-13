@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Mvc;
 
 namespace Blob.Web.Framework.Mvc
 {
@@ -12,6 +13,10 @@ namespace Blob.Web.Framework.Mvc
         {
             this.CustomProperties = new Dictionary<string, object>();
         }
+
+         public virtual void BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+         {
+         }
 
          /// <summary>
          /// Use this property to store any custom value for your models. 
