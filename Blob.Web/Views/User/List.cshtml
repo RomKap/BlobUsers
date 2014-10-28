@@ -1,0 +1,19 @@
+﻿@*@model List<Blob.Web.Models.Users.UserModel>*@
+@model  Blob.Core.IPagedList<Blob.Core.Domain.Users.User>
+    
+
+ @using (Html.BeginForm())
+ {
+     
+     <div>
+        @foreach (var item in Model)
+        {
+            <div>
+            Name: @item.fname         
+            </div>
+        }  
+
+     </div>
+     
+      
+ }

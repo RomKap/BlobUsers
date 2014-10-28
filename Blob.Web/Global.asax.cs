@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Blob.Web.Framework.Mvc;
+using Blob.Core.Infrastructure;
 
 namespace Blob.Web
 {
@@ -32,6 +33,9 @@ namespace Blob.Web
 
         protected void Application_Start()
         {
+            //initialize engine context
+            EngineContext.Initialize(true);             
+
             AreaRegistration.RegisterAllAreas();
 
             ModelBinders.Binders.Add(typeof(BaseBlobModel), new BlobModelBinder());
