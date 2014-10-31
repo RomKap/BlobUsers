@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using System.IO;
-
+using System.Web;
 
 
 namespace Blob.Web.Framework.Controllers
@@ -25,8 +25,8 @@ namespace Blob.Web.Framework.Controllers
         public virtual string RenderPartialViewToString(string viewName, object model)
         {
 
-            //if (string.IsNullOrEmpty(viewName))
-            //    viewName = this.ControllerContext.RouteData.GetRequiredString("action");
+            if (string.IsNullOrEmpty(viewName))
+                viewName = this.ControllerContext.RouteData.GetRequiredString("action");
 
             this.ViewData.Model = model;
 

@@ -12,7 +12,7 @@ namespace Blob.Data.Mapping.Users
     {
         public UserMap()
         {
-            this.ToTable("User");
+            this.ToTable("Users");
             this.HasKey(c => c.Id);
             this.Property(u => u.Username).HasMaxLength(50);
             this.Property(u => u.fname).HasMaxLength(50);

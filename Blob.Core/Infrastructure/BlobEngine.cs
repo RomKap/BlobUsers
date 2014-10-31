@@ -51,7 +51,7 @@ namespace Blob.Core.Infrastructure
 
 
             //dependencies
-            var typeFinder = new WebAppTypeFinder(config) as ITypeFinder;
+            var typeFinder = new WebAppTypeFinder(config);
             builder = new ContainerBuilder();
             builder.RegisterInstance(config).As<BlobConfig>().SingleInstance();
             builder.RegisterInstance(this).As<IEngine>().SingleInstance();
