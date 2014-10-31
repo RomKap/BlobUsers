@@ -49,19 +49,33 @@ namespace Blob.Web.Controllers
 
         public ActionResult UserList(DataSourceRequest command, UserListModel model)
         {
-            var users = _userService.GetAllUsers();
+            var users = _userService.GetAllUsers();         
 
-            //var gridModel = new DataSourceResult
-            //{
-            //    Data = users.Select(PrepareUserModelForList),
-            //    Total = users.TotalCount
-            //};
-
-            //return Json(gridModel);
-
-            return View("List");
+            return View("List", users);
         }
 
+        public ActionResult UserListAll(DataSourceRequest command, UserListModel model)
+        {
+            var users = _userService.GetAllUsers();
+
+            return View("ListGrid", users);
+        }
+
+ 
+        public ActionResult UserListGrid(DataSourceRequest command, UserListModel model)
+        {
+            var users = _userService.GetAllUsers();
+
+            var gridModel = new DataSourceResult
+            {
+                Data = users.Select(PrepareUserModelForList),
+                Total = users.TotalCount
+            };
+
+            return Json(gridModel, JsonRequestBehavior.AllowGet);            
+        }
+
+        [NonAction]
         protected virtual UserModel PrepareUserModelForList(User user)
         {
             return new UserModel()
